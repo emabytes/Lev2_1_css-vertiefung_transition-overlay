@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+article {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+article img {
+    width: 100%;
+}
+
+article h1 {
+    position: absolute;
+    font-size: 3em;
+    color: pink;
+    background: rgba(236, 236, 236, 0.2);
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    transition: top 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article:hover h1 {
+    top: 0;
+}
